@@ -17,13 +17,15 @@
     "prestart": "npm install",
     "pretest": "npm install",
     "start": "react-scripts start",
-    "test": "rm -rf ./junit.xml && ./node_modules/.bin/react-scripts test --verbose --env=jsdom --testResultsProcessor ./node_modules/jest-junit"
+    "deploy": "gh-pages -d build",
+    "test": "react-scripts test --verbose --env=jsdom --testResultsProcessor ./node_modules/jest-junit"
   },
   "devDependencies": {
     "chai": "^4.1.2",
     "enzyme": "^3.2.0",
     "enzyme-adapter-react-16": "^1.1.0",
     "expect": "^21.2.1",
+    "gh-pages": "^3.1.0",
     "jest-junit": "^3.3.0",
     "react-test-renderer": "^16.2.0"
   }
