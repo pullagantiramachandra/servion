@@ -15,11 +15,11 @@
     "h8k-design": "^1.0.8"
   },
   "scripts": {
-    "prestart": "npm install",
-    "pretest": "npm install",
     "start": "react-scripts start",
+    "build": "react-scripts build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
+    "eject": "react-scripts eject",
     "test": "react-scripts test --verbose --env=jsdom --testResultsProcessor ./node_modules/jest-junit"
   },
   "devDependencies": {
